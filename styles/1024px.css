@@ -1,0 +1,15 @@
+.navbar__grid {
+  display: none;
+}
+
+.navbar {
+  display: inline;
+}
+
+.neural {
+  display: inline;
+}
+
+.white__navbar-container__logo {
+  display: none;
+}

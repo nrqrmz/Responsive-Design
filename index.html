@@ -6,22 +6,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Web Design</title>
   <link rel="icon" href="assets/favicon.jpg">
-  <link rel="stylesheet" href="styles/300px.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 300px)" href="styles/300px.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="styles/768px.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)" href="styles/1024px.css">
   <script src="https://kit.fontawesome.com/868918ead5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  
+
   <nav class="navbar">
     <ul class="black__navbar">
-
+      <li class="black__navbar-links">
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a-news bold700 no-underline">news</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">events<i class="fas fa-sort-down arrow-down"></i></a></div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">business<i class="fas fa-sort-down arrow-down"></i></a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">AMAs</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">spaces</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">terms & conditions</a>
+        </div>
+      </li>
+      <li class="black__navbar-links">
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a  no-underline">about</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">advertise</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">jobs</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">contact</a>
+        </div>
+      </li>
     </ul>
+
     <ul class="white__navbar">
-      
       <li class="white__navbar-container__logo">
         <img class="white__navbar-container__logo-img" src="assets/the_next_web_logo.jpg" alt="">
       </li>
-      
+
+      <li class="white__navbar-links">
+
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            latest
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            hard fork
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            plugged
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            readme
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            growth quarters
+          </a>
+        </div>
+        <div class="wnl uppercase neural">
+          <a href="#" class="wnl-a no-underline">
+            neural
+          </a>
+        </div>
+
+      </li>
+
       <li class="white__navbar-container__search-and-menu">
         <div class="white__navbar-container__search">
           <i class="fas fa-search"></i>
@@ -29,16 +98,105 @@
         <div class="white__navbar-container__menu">
           <i class="fas fa-bars"></i>
         </div>
-
-         
-      
-
-      </div>
-      
+      </li>
     </ul>
+
+  </nav>
+  <nav class="navbar__grid">
+    <div class="logo-mr">
+      <img class="logo-mr-img" src="assets/the_next_web_logo.jpg" alt="">
+    </div>
+    <ul class="black__navbar">
+      <li class="black__navbar-links">
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a-news bold700 no-underline">news</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">events<i class="fas fa-sort-down arrow-down"></i></a></div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">business<i class="fas fa-sort-down arrow-down"></i></a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">AMAs</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">spaces</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">terms & conditions</a>
+        </div>
+      </li>
+      <li class="black__navbar-links">
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a  no-underline">about</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">advertise</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">jobs</a>
+        </div>
+        <div class="bnl capitalize">
+          <a href="#" class="bnl-a no-underline">contact</a>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="white__navbar">
+
+      <li class="white__navbar-links">
+
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            latest
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            hard fork
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            plugged
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            readme
+          </a>
+        </div>
+        <div class="wnl uppercase">
+          <a href="#" class="wnl-a no-underline">
+            growth quarters
+          </a>
+        </div>
+        <div class="wnl uppercase neural">
+          <a href="#" class="wnl-a no-underline">
+            neural
+          </a>
+        </div>
+
+      </li>
+
+      <li class="white__navbar-container__search-and-menu">
+        <div class="white__navbar-container__search">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="white__navbar-container__menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </li>
+    </ul>
+
   </nav>
 
-  
+  <main>
+    <div class="sample">
+
+    </div>
+  </main>
+
 
 </body>
 
