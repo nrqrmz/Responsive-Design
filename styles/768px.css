@@ -1,3 +1,5 @@
+/* Navbar */
+
 .navbar {
   display: none;
 }
@@ -25,7 +27,6 @@
   display: flex;
   background: var(--black-tnw);
   height: 32px;
-  display: flex;
   justify-content: space-between;
   padding: 0 15px;
 }
@@ -74,4 +75,61 @@
 
 .white__navbar-container__menu {
   display: none;
+}
+
+/* Trigrid */
+
+.trigrid {
+  grid-template-areas: 
+  "first second"
+  "first third";
+  grid-template-columns: 9fr 5fr;
+  grid-template-rows: auto auto;
+}
+
+.trigrid-article1 {
+  grid-area: first;
+  height: 340px;
+}
+
+.trigrid-article2 {
+  grid-area: second;
+}
+
+.trigrid-article3 {
+  grid-area: third;
+}
+
+/* Octagrid */
+
+.octagrid {
+  display: grid;
+  grid-template-areas: 
+    "mercury venus earth"
+    "mars jupiter saturn"
+    "uranus neptune pluto";
+  grid-gap: 10px;
+}
+
+.octagrid__container {
+  display: grid;
+  grid-template-areas: 
+    "image"
+    "title"
+    "author-date";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
+}
+
+.og-img {
+  grid-area: image;
+
+}
+
+.og-title {
+  grid-area: title;
+}
+
+.og-author {
+  grid-area: author-date;
 }

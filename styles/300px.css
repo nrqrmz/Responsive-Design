@@ -30,7 +30,9 @@
   --white-tnw: #f9f9f9;
   --gray1: #a1a1a1;
   --gray2: #aaa;
+  --gray3: #555;
   --black-tnw: #131313;
+  --orange-tnw: #f42;
 }
 
 /* Navbar */
@@ -54,7 +56,7 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.155);
-  position: fixed;
+  position: relative;
 }
 
 .white__navbar-container__logo-img {
@@ -97,10 +99,161 @@
 }
 
 .fa-bars {
-  color: #f42;
+  color: var(--orange-tnw);
   padding: 1em;
 }
 
-.sample {
-  height: 3000px;
+/* Trigrid */
+
+.trigrid {
+  display: grid;
+  padding: 20px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "first"
+    "second"
+    "third";
+}
+
+.trigrid-article1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Coronavirus-model-796x418.jpg");
+  height: 150px;
+  padding: 15px;
+}
+
+.trigrid-article2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/waymo-level-4-germany-legislation-automotive-cars-future-self-driving-autonomous-796x446.jpg");
+  height: 150px;
+  padding: 15px;
+}
+
+.trigrid-article3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/sheets_formula-796x417.png");
+  height: 150px;
+  padding: 15px;
+}
+
+.tga-category {
+  color: var(--white-tnw);
+}
+
+.tga-title {
+  color: var(--white-tnw);
+  font-size: 1.5em;
+}
+
+.tga-p {
+  color: var(--gray2);
+}
+
+.tga-p-a {
+  color: var(--gray2);
+}
+
+/* Octagrid */
+
+.latest__news-container {
+  padding-top: 2rem;
+  padding-left: 20px;
+}
+
+.ln-a {
+  color: var(--orange-tnw);
+  font-size: 2rem;
+}
+
+.ln-a:hover {
+  color: var(--black-tnw);
+}
+
+.octagrid {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.og1 {
+  grid-area: mercury;
+}
+
+.og2 {
+  grid-area: venus;
+}
+
+.og3 {
+  grid-area: earth;
+}
+
+.og4 {
+  grid-area: mars;
+}
+
+.og5 {
+  grid-area: jupiter;
+}
+
+.og6 {
+  grid-area: saturn;
+}
+
+.og7 {
+  grid-area: uranus;
+}
+
+.og8 {
+  grid-area: neptune;
+}
+
+.og-img {
+  grid-area: image;
+  width: 100px;
+  height: 100px;
+}
+
+.og-title {
+  grid-area: title;
+}
+
+.og-author {
+  grid-area: author-date;
+}
+
+.octagrid__container {
+  padding: 10px 0;
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image author-date";
+  grid-template-columns: 100px 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.og-title-a {
+  color: var(--black-tnw);
+}
+
+.og-title-a:hover {
+  color: var(--orange-tnw);
+}
+
+.og-author {
+  color: var(--gray1);
+}
+
+.og-author-a {
+  color: var(--gray1)
+}
+
+.og-author-a:hover {
+  color: var(--gray3);
 }

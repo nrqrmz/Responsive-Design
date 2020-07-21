@@ -1,3 +1,5 @@
+/* Navbar */
+
 .navbar__grid {
   display: none;
 }
@@ -12,4 +14,13 @@
 
 .white__navbar-container__logo {
   display: none;
+}
+
+/* Octagrid */
+
+.octagrid {
+  display: grid;
+  grid-template-areas: 
+    "mercury venus earth mars"
+    "jupiter saturn uranus neptune";
 }
