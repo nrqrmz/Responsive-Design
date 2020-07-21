@@ -260,3 +260,47 @@
 .og-author-a:hover {
   color: var(--gray3);
 }
+
+/* Index Co */
+
+.index__co {
+  padding: 20px;
+}
+
+.ict-h1 {
+  color: var(--orange-tnw);
+}
+
+.ict-h1-a {
+  color: var(--orange-tnw);
+}
+
+.ict-h1-a:hover {
+  color: var(--black-tnw);
+}
+
+.ict-info-ul {
+  padding-top: 10px;
+  list-style: none;
+}
+
+.ict-info-items {
+  color: var(--orange-tnw);
+}
+
+.ict-info-items:hover {
+  color: var(--black-tnw);
+}
+
+.ict-info-p {
+  color: var(--orange-tnw);
+  display: none;
+}
+
+.ict-info-a {
+  color: var(--orange-tnw);
+}
+
+.ict-info-a:hover {
+  color: var(--black-tnw);
+}

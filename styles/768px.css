@@ -135,3 +135,14 @@
 .og-author {
   grid-area: author-date;
 }
+
+/* Index Co */
+
+.ict-info-ul {
+  display: none;
+}
+
+.ict-info-p {
+  color: var(--orange-tnw);
+  display: inline;
+}

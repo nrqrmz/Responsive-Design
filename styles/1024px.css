@@ -26,3 +26,13 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+/* Index Co */
+
+.index__co-title {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.ict-info-p {
+  align-items: flex-end;
+}
