@@ -109,6 +109,7 @@
     "mars jupiter saturn"
     "uranus neptune pluto";
   grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .octagrid__container {
@@ -123,7 +124,8 @@
 
 .og-img {
   grid-area: image;
-
+  width: 100%;
+  height: auto;
 }
 
 .og-title {

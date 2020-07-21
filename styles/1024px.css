@@ -23,4 +23,5 @@
   grid-template-areas: 
     "mercury venus earth mars"
     "jupiter saturn uranus neptune";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
