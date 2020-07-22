@@ -168,3 +168,9 @@
 .icc3 {
   grid-area: south;
 }
+
+.nonagrid__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
