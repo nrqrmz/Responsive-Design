@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* Attributtes */
+
+.bold700 {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.d-none-300 {
+  display: none;
+}
+
+/* Root colores */
+
+:root {
+  --white-tnw: #f9f9f9;
+  --gray1: #a1a1a1;
+  --gray2: #aaa;
+  --gray3: #555;
+  --black-tnw: #131313;
+  --orange-tnw: #f42;
+  --light-orange: #ffebe8;
+  --lighter-orange: #fffaf8;
+  --orange-line: #ffccc3;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar__grid {
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 2;
+}
+
+.black__navbar {
+  display: none;
+}
+
+.white__navbar {
+  background: #fff;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.155);
+  position: relative;
+}
+
+.white__navbar-container__logo-img {
+  width: 103px;
+  height: 48px;
+}
+
+.white__navbar-links {
+  display: none;
+  padding-left: 15px;
+  align-self: center;
+}
+
+.wnl {
+  padding: 0 5px;
+}
+
+.wnl-a {
+  color: var(--gray2);
+}
+
+.wnl-a:hover {
+  color: var(--black-tnw);
+}
+
+.white__navbar-container__search-and-menu {
+  list-style: none;
+  display: flex;
+  border-left: 1px solid #eee;
+}
+
+.white__navbar-container__search {
+  border-right: 1px solid #eee;
+}
+
+.fa-search {
+  color: var(--gray2);
+  padding: 1em;
+}
+
+.fa-bars {
+  color: var(--orange-tnw);
+  padding: 1em;
+}
+
+/* Trigrid */
+
+.trigrid {
+  display: grid;
+  padding: 90px 20px 20px 20px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "first"
+    "second"
+    "third";
+}
+
+.trigrid-article1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Coronavirus-model-796x418.jpg") center / cover;
+  height: 40vh;
+  padding: 15px;
+}
+
+.trigrid-article2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/waymo-level-4-germany-legislation-automotive-cars-future-self-driving-autonomous-796x446.jpg") center / cover;
+  height: 40vh;
+  padding: 15px;
+}
+
+.trigrid-article3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/sheets_formula-796x417.png") center / cover;
+  height: 40vh;
+  padding: 15px;
+}
+
+.tglogo {
+  width: 40%;
+  display: none;
+}
+
+.tga-category {
+  color: var(--white-tnw);
+  font-size: 0.9rem;
+}
+
+.tga-title {
+  color: var(--white-tnw);
+  font-size: 1.25rem;
+}
+
+.tga-p {
+  color: var(--gray2);
+}
+
+.tga-p-a {
+  color: var(--gray2);
+}
+
+/* Octagrid */
+
+.latest__news-container {
+  padding-top: 2rem;
+  padding-left: 20px;
+}
+
+.ln-a {
+  color: var(--orange-tnw);
+  font-size: 2rem;
+}
+
+.ln-a:hover {
+  color: var(--black-tnw);
+}
+
+.octagrid {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.og1 {
+  grid-area: mercury;
+}
+
+.og2 {
+  grid-area: venus;
+}
+
+.og3 {
+  grid-area: earth;
+}
+
+.og4 {
+  grid-area: mars;
+}
+
+.og5 {
+  grid-area: jupiter;
+}
+
+.og6 {
+  grid-area: saturn;
+}
+
+.og7 {
+  grid-area: uranus;
+}
+
+.og8 {
+  grid-area: neptune;
+}
+
+.og-img {
+  grid-area: image;
+  width: 100px;
+  height: 100px;
+}
+
+.og-title {
+  grid-area: title;
+}
+
+.og-author {
+  grid-area: author-date;
+  color: var(--gray1);
+}
+
+.octagrid__container {
+  padding: 10px 0;
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image author-date";
+  grid-template-columns: 100px 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.og-title-a {
+  color: var(--black-tnw);
+}
+
+.og-title-a:hover {
+  color: var(--orange-tnw);
+}
+
+.og-author-a:hover {
+  color: var(--gray3);
+}
+
+/* Index Co */
+
+.index__co {
+  padding: 20px;
+  z-index: 1;
+}
+
+.ict-h1 {
+  color: var(--orange-tnw);
+}
+
+.ict-h1-a {
+  color: var(--orange-tnw);
+}
+
+.ict-h1-a:hover {
+  color: var(--black-tnw);
+}
+
+.ict-info-ul {
+  padding-top: 10px;
+  list-style: none;
+}
+
+.ict-info-items {
+  color: var(--orange-tnw);
+}
+
+.ict-info-items:hover {
+  color: var(--black-tnw);
+}
+
+.ict-info-p {
+  color: var(--orange-tnw);
+  display: none;
+}
+
+.ict-info-a {
+  color: var(--orange-tnw);
+}
+
+.ict-info-a:hover {
+  color: var(--black-tnw);
+}
+
+.index__co-title {
+  padding-bottom: 1rem;
+}
+
+.index__co-container {
+  padding-top: 1rem;
+}
+
+.ics-header {
+  position: relative;
+}
+
+.ics-img {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.ics-h2-white {
+  color: var(--white-tnw);
+  background: var(--orange-tnw);
+  padding: 0.5rem 0.5rem 0.5rem 5rem;
+  font-size: 18px;
+}
+
+.ics-subheader {
+  background: var(--light-orange);
+  padding: 0.5rem 0.5rem 1rem 5rem;
+}
+
+.ics-h2-black {
+  color: var(--black-tnw);
+  background: var(--light-orange);
+  font-size: 18px;
+}
+
+.ics-subheader-p {
+  color: var(--gray3);
+  font-size: 12px;
+}
+
+.ics-subheader-2 {
+  background: var(--lighter-orange);
+  padding: 1rem 0.5rem 1rem 10px;
+  border-bottom: 1px solid var(--orange-line);
+}
+
+.ics-subheader-2-ul {
+  list-style: none;
+}
+
+.ics-subheader-2-a {
+  line-height: 1.5rem;
+  color: var(--black-tnw);
+  font-size: 12px;
+}
+
+.ics-subheader-3 {
+  background: var(--lighter-orange);
+  padding: 1rem 0.5rem 1rem 10px;
+}
+
+/* Nonagrid */
+
+.nonagrid__wrapper {
+  width: 100%;
+}
+
+.nonagrid__article {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.category-title-a {
+  color: var(--orange-tnw);
+  font-size: 2rem;
+}
+
+.category-title-a:hover {
+  color: var(--black-tnw);
+}
+
+.main__image1 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/TikTok-USA-hed-368x276.jpg);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image2 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/robinhood-368x276.jpg);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image3 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/OnePlus-Buds-1-of-3-368x276.jpg);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image4 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/ev-charging-kw-kwh-car-future-electric-vehicle-battery-kilowatt-kilowatt-hours-368x276.jpg);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image5 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-16T172150.239-368x276.png);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image6 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/106909103_10101777330197904_2889321509499508446_o-1-368x276.jpg);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image7 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/corona_news-6_blue-368x276.gif);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image8 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/BMW-ix3-unveiling-car-future-bavarian-motor-ev-electric-368x276.png);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.main__image9 {
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Legend-of-Korra-368x276.jpg);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+
+.mi-section-a {
+  color: var(--white-tnw);
+}
+
+.mi-title {
+  font-size: 1.4rem;
+  color: var(--white-tnw);
+}
+
+.mi-title:hover {
+  text-decoration: underline;
+}
+
+.mi-aad {
+  color: var(--gray1);
+  font-size: 14px;
+}
+
+.author-a {
+  text-decoration: none;
+  color: var(--gray1);
+}
+
+.ng-orange__section {
+  background: var(--light-orange);
+  display: grid;
+  grid-template-areas: "cat image";
+  grid-template-columns: 1fr 100px;
+  grid-template-rows: 1fr 1fr;
+  height: 100px;
+}
+
+.ng-os-cat {
+  grid-area: cat;
+  padding: 1rem;
+}
+
+.ng-os-category {
+  color: var(--orange-tnw);
+  padding-bottom: 5px;
+}
+
+.ng-os-title {
+  color: var(--orange-tnw);
+}
+
+.ng-og-img {
+  width: 100px;
+  height: 100px;
+  grid-area: image;
+}
+
+.ng__ul {
+  margin: 10px 20px;
+  list-style: var(--orange-tnw);
+}
+
+.ng__ul-li {
+  color: var(--orange-tnw);
+  padding: 0.2rem 0;
+  border-bottom: 1px solid var(--gray1);
+}
+
+.ng__ul-li-a {
+  color: var(--gray1);
+  font-size: 14px;
+}
+
+/* Footer */
+
+.footer__wrapper {
+  width: 100%;
+}
+
+.footer-b1 {
+  background: var(--black-tnw);
+  height: 10rem;
+}
+
+.fb1-u {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 2.5rem;
+}
+
+.fb1-l {
+  background: #333;
+  padding: 1rem;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.fb1-u2 {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 1.5rem;
+}
+
+.fb1-a {
+  color: var(--gray2);
+  margin: 0 4px;
+  font-size: 14px;
+}
+
+.footer-b2 {
+  background: #000;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-b2-wrapper {
+  display: flex;
+  max-width: 80%;
+}
+
+.fimg1 {
+  height: 15px;
+}
+
+.fimg2 {
+  height: 15px;
+}
+
+.fb2-p {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Navbar */
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar__grid {
+    display: grid;
+    grid-template-areas:
+      "logo black-nav"
+      "logo white-nav";
+    grid-template-columns: 106px 1fr;
+    grid-template-rows: 32px 48px;
+  }
+
+  .logo-mr {
+    grid-area: logo;
+  }
+
+  .logo-mr-img {
+    width: 106px;
+    height: 80px;
+  }
+
+  .black__navbar {
+    grid-area: black-nav;
+    display: flex;
+    background: var(--black-tnw);
+    height: 32px;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .black__navbar-links {
+    display: flex;
+  }
+
+  .bnl {
+    align-self: center;
+    padding: 0 5px;
+  }
+
+  .bnl-a-news {
+    color: var(--white-tnw);
+    font-size: 14px;
+  }
+
+  .bnl-a {
+    color: var(--gray1);
+    font-size: 14px;
+  }
+
+  .bnl-a:hover {
+    color: var(--white-tnw);
+  }
+
+  .arrow-down {
+    padding-left: 5px;
+  }
+
+  .white__navbar {
+    grid-area: white-nav;
+    position: relative;
+  }
+
+  .white__navbar-links {
+    display: flex;
+    padding-left: 15px;
+    align-self: center;
+  }
+
+  .neural {
+    display: none;
+  }
+
+  .white__navbar-container__menu {
+    display: none;
+  }
+
+  /* Trigrid */
+
+  .trigrid {
+    grid-template-areas:
+      "first second"
+      "first third";
+    grid-template-columns: 9fr 5fr;
+    grid-template-rows: auto auto;
+  }
+
+  .trigrid-article1 {
+    grid-area: first;
+    height: 87vh;
+  }
+
+  .trigrid-article2 {
+    grid-area: second;
+  }
+
+  .trigrid-article3 {
+    grid-area: third;
+  }
+
+  /* Octagrid */
+
+  .octagrid {
+    display: grid;
+    grid-template-areas:
+
+      "mercury venus earth"
+      "mars jupiter saturn"
+      "uranus neptune pluto";
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .octagrid__container {
+    display: grid;
+    grid-template-areas:
+
+      "image"
+      "title"
+      "author-date";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+  }
+
+  .og-img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+  }
+
+  .og-title {
+    grid-area: title;
+  }
+
+  .og-author {
+    grid-area: author-date;
+  }
+
+  /* Index Co */
+
+  .ict-info-ul {
+    display: none;
+  }
+
+  .ict-info-p {
+    color: var(--orange-tnw);
+    display: inline;
+  }
+
+  .index__co-grid {
+    display: grid;
+    grid-template-areas: "north east south";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .icc1 {
+    grid-area: north;
+  }
+
+  .icc2 {
+    grid-area: east;
+  }
+
+  .icc3 {
+    grid-area: south;
+  }
+
+  .nonagrid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Navbar */
+
+  .navbar__grid {
+    display: none;
+  }
+
+  .navbar {
+    display: inline;
+  }
+
+  .neural {
+    display: inline;
+  }
+
+  .white__navbar-container__logo {
+    display: none;
+  }
+
+  .tglogo {
+    width: 40%;
+    display: inline;
+  }
+
+  /* Octagrid */
+
+  .octagrid {
+    display: grid;
+    grid-template-areas:
+      "mercury venus earth mars"
+      "jupiter saturn uranus neptune";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* Index Co */
+
+  .index__co-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ict-info-p {
+    align-items: flex-end;
+  }
+
+  .d-none-300 {
+    display: inline;
+  }
+
+  .index__co-grid {
+    display: grid;
+    grid-template-areas: "north east south west";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .icc4 {
+    grid-area: west;
+  }
+
+  /* Nonagrid */
+
+  .nonagrid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}

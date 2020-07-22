@@ -1,0 +1,61 @@
+/* Navbar */
+
+.navbar__grid {
+  display: none;
+}
+
+.navbar {
+  display: inline;
+}
+
+.neural {
+  display: inline;
+}
+
+.white__navbar-container__logo {
+  display: none;
+}
+
+/* Octagrid */
+
+.octagrid {
+  display: grid;
+  grid-template-areas:
+    "mercury venus earth mars"
+    "jupiter saturn uranus neptune";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Index Co */
+
+.index__co-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ict-info-p {
+  align-items: flex-end;
+}
+
+.d-none-300 {
+  display: inline;
+}
+
+.index__co-grid {
+  display: grid;
+  grid-template-areas: "north east south west";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.icc4 {
+  grid-area: west;
+}
+
+/* Nonagrid */
+
+.nonagrid__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
