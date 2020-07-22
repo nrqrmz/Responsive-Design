@@ -572,3 +572,361 @@
   font-size: 14px;
   padding: 0 10px;
 }
+
+@media screen and (min-width: 768px) {
+  
+  /* Navbar */
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar__grid {
+    display: grid;
+    grid-template-areas:
+      "logo black-nav"
+      "logo white-nav";
+    grid-template-columns: 106px 1fr;
+    grid-template-rows: 32px 48px;
+  }
+
+  .logo-mr {
+    grid-area: logo;
+  }
+
+  .logo-mr-img {
+    width: 106px;
+    height: 80px;
+  }
+
+  .black__navbar {
+    grid-area: black-nav;
+    display: flex;
+    background: var(--black-tnw);
+    height: 32px;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .black__navbar-links {
+    display: flex;
+  }
+
+  .bnl {
+    align-self: center;
+    padding: 0 5px;
+  }
+
+  .bnl-a-news {
+    color: var(--white-tnw);
+    font-size: 14px;
+  }
+
+  .bnl-a {
+    color: var(--gray1);
+    font-size: 14px;
+  }
+
+  .bnl-a:hover {
+    color: var(--white-tnw);
+  }
+
+  .arrow-down {
+    padding-left: 5px;
+  }
+
+  .white__navbar {
+    grid-area: white-nav;
+    position: relative;
+  }
+
+  .white__navbar-links {
+    display: flex;
+    padding-left: 15px;
+    align-self: center;
+  }
+
+  .neural {
+    display: none;
+  }
+
+  .white__navbar-container__menu {
+    display: none;
+  }
+
+  /* Trigrid */
+
+  .trigrid {
+    grid-template-areas:
+      "first second"
+      "first third";
+    grid-template-columns: 9fr 5fr;
+    grid-template-rows: auto auto;
+  }
+
+  .trigrid-article1 {
+    grid-area: first;
+    height: 340px;
+  }
+
+  .trigrid-article2 {
+    grid-area: second;
+  }
+
+  .trigrid-article3 {
+    grid-area: third;
+  }
+
+  /* Octagrid */
+
+  .octagrid {
+    display: grid;
+    grid-template-areas:
+
+      "mercury venus earth"
+      "mars jupiter saturn"
+      "uranus neptune pluto";
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .octagrid__container {
+    display: grid;
+    grid-template-areas:
+
+      "image"
+      "title"
+      "author-date";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+  }
+
+  .og-img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+  }
+
+  .og-title {
+    grid-area: title;
+  }
+
+  .og-author {
+    grid-area: author-date;
+  }
+
+  /* Index Co */
+
+  .ict-info-ul {
+    display: none;
+  }
+
+  .ict-info-p {
+    color: var(--orange-tnw);
+    display: inline;
+  }
+
+  .index__co-grid {
+    display: grid;
+    grid-template-areas: "north east south";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .icc1 {
+    grid-area: north;
+  }
+
+  .icc2 {
+    grid-area: east;
+  }
+
+  .icc3 {
+    grid-area: south;
+  }
+
+  .nonagrid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (mid-width: 1024px) {
+
+  /* Navbar */
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar__grid {
+    display: grid;
+    grid-template-areas:
+      "logo black-nav"
+      "logo white-nav";
+    grid-template-columns: 106px 1fr;
+    grid-template-rows: 32px 48px;
+  }
+
+  .logo-mr {
+    grid-area: logo;
+  }
+
+  .logo-mr-img {
+    width: 106px;
+    height: 80px;
+  }
+
+  .black__navbar {
+    grid-area: black-nav;
+    display: flex;
+    background: var(--black-tnw);
+    height: 32px;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .black__navbar-links {
+    display: flex;
+  }
+
+  .bnl {
+    align-self: center;
+    padding: 0 5px;
+  }
+
+  .bnl-a-news {
+    color: var(--white-tnw);
+    font-size: 14px;
+  }
+
+  .bnl-a {
+    color: var(--gray1);
+    font-size: 14px;
+  }
+
+  .bnl-a:hover {
+    color: var(--white-tnw);
+  }
+
+  .arrow-down {
+    padding-left: 5px;
+  }
+
+  .white__navbar {
+    grid-area: white-nav;
+    position: relative;
+  }
+
+  .white__navbar-links {
+    display: flex;
+    padding-left: 15px;
+    align-self: center;
+  }
+
+  .neural {
+    display: none;
+  }
+
+  .white__navbar-container__menu {
+    display: none;
+  }
+
+  /* Trigrid */
+
+  .trigrid {
+    grid-template-areas:
+      "first second"
+      "first third";
+    grid-template-columns: 9fr 5fr;
+    grid-template-rows: auto auto;
+  }
+
+  .trigrid-article1 {
+    grid-area: first;
+    height: 340px;
+  }
+
+  .trigrid-article2 {
+    grid-area: second;
+  }
+
+  .trigrid-article3 {
+    grid-area: third;
+  }
+
+  /* Octagrid */
+
+  .octagrid {
+    display: grid;
+    grid-template-areas:
+
+      "mercury venus earth"
+      "mars jupiter saturn"
+      "uranus neptune pluto";
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .octagrid__container {
+    display: grid;
+    grid-template-areas:
+
+      "image"
+      "title"
+      "author-date";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+  }
+
+  .og-img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+  }
+
+  .og-title {
+    grid-area: title;
+  }
+
+  .og-author {
+    grid-area: author-date;
+  }
+
+  /* Index Co */
+
+  .ict-info-ul {
+    display: none;
+  }
+
+  .ict-info-p {
+    color: var(--orange-tnw);
+    display: inline;
+  }
+
+  .index__co-grid {
+    display: grid;
+    grid-template-areas: "north east south";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .icc1 {
+    grid-area: north;
+  }
+
+  .icc2 {
+    grid-area: east;
+  }
+
+  .icc3 {
+    grid-area: south;
+  }
+
+  .nonagrid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
