@@ -36,3 +36,7 @@
 .ict-info-p {
   align-items: flex-end;
 }
+
+.d-none-300 {
+  display: inline;
+}

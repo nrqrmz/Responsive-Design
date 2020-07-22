@@ -146,3 +146,17 @@
   color: var(--orange-tnw);
   display: inline;
 }
+
+.index__co-grid {
+  display: grid;
+  grid-template-areas: "north east south west";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.index__co-container {
+}
+
+.icc1 {
+  grid-area: north;
+}
