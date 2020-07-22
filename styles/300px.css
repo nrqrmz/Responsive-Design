@@ -67,7 +67,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.155);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.155);
   position: relative;
 }
 
@@ -98,7 +98,6 @@
   list-style: none;
   display: flex;
   border-left: 1px solid #eee;
-
 }
 
 .white__navbar-container__search {
@@ -237,6 +236,7 @@
 
 .og-author {
   grid-area: author-date;
+  color: var(--gray1);
 }
 
 .octagrid__container {
@@ -260,10 +260,6 @@
 
 .og-author {
   color: var(--gray1);
-}
-
-.og-author-a {
-  color: var(--gray1)
 }
 
 .og-author-a:hover {
@@ -322,8 +318,6 @@
 .index__co-container {
   padding-top: 1rem;
 }
-
-.index__co-square {}
 
 .ics-header {
   position: relative;
@@ -384,7 +378,6 @@
 
 .nonagrid__wrapper {
   width: 100%;
-
 }
 
 .nonagrid__article {
@@ -399,12 +392,6 @@
 
 .category-title-a:hover {
   color: var(--black-tnw);
-}
-
-.main__image1 {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/TikTok-USA-hed-368x276.jpg);
-  background-size: cover;
-  padding: 10rem 2rem 1rem 1rem;
 }
 
 .main__image1 {

@@ -81,8 +81,8 @@
 
 .trigrid {
   grid-template-areas:
-    "first second"
-    "first third";
+     "first second"
+     "first third";
   grid-template-columns: 9fr 5fr;
   grid-template-rows: auto auto;
 }
@@ -105,6 +105,7 @@
 .octagrid {
   display: grid;
   grid-template-areas:
+
     "mercury venus earth"
     "mars jupiter saturn"
     "uranus neptune pluto";
@@ -115,6 +116,7 @@
 .octagrid__container {
   display: grid;
   grid-template-areas:
+
     "image"
     "title"
     "author-date";
@@ -153,8 +155,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
-
-.index__co-container {}
 
 .icc1 {
   grid-area: north;
