@@ -323,9 +323,7 @@
   padding-top: 1rem;
 }
 
-.index__co-square {
- 
-}
+.index__co-square {}
 
 .ics-header {
   position: relative;
@@ -414,36 +412,43 @@
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .main__image2 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/robinhood-368x276.jpg);
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .main__image3 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/OnePlus-Buds-1-of-3-368x276.jpg);
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .main__image4 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/ev-charging-kw-kwh-car-future-electric-vehicle-battery-kilowatt-kilowatt-hours-368x276.jpg);
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .main__image5 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-16T172150.239-368x276.png);
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .main__image6 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/106909103_10101777330197904_2889321509499508446_o-1-368x276.jpg);
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .main__image7 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/corona_news-6_blue-368x276.gif);
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .main__image8 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/BMW-ix3-unveiling-car-future-bavarian-motor-ev-electric-368x276.png);
   background-size: cover;
@@ -455,6 +460,7 @@
   background-size: cover;
   padding: 10rem 2rem 1rem 1rem;
 }
+
 .mi-section-a {
   color: var(--white-tnw);
 }
@@ -481,11 +487,11 @@
 .ng-orange__section {
   background: var(--light-orange);
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "cat image";
   grid-template-columns: 1fr 100px;
-  grid-template-rows: 1fr 1fr;  
-  height: 100px;  
+  grid-template-rows: 1fr 1fr;
+  height: 100px;
 }
 
 .ng-os-cat {
@@ -584,6 +590,3 @@
   font-size: 14px;
   padding: 0 10px;
 }
-
-
-

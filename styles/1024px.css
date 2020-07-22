@@ -20,7 +20,7 @@
 
 .octagrid {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "mercury venus earth mars"
     "jupiter saturn uranus neptune";
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -29,7 +29,7 @@
 /* Index Co */
 
 .index__co-title {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
 
