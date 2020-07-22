@@ -470,8 +470,7 @@
 .ng-orange__section {
   background: var(--light-orange);
   display: grid;
-  grid-template-areas:
-    "cat image";
+  grid-template-areas: "cat image";
   grid-template-columns: 1fr 100px;
   grid-template-rows: 1fr 1fr;
   height: 100px;
