@@ -81,8 +81,8 @@
 
 .trigrid {
   grid-template-areas:
-     "first second"
-     "first third";
+    "first second"
+    "first third";
   grid-template-columns: 9fr 5fr;
   grid-template-rows: auto auto;
 }
