@@ -2,8 +2,6 @@
 
 This project consists of responsive design. Responsiveness is attained using media queries. This project works with 3 different resolutions: 300px, 768px, and 1024px.
 
-<img src="assets/rwd1.png"/>
-<img src="assets/rwd2.png"/>
 <img src="assets/rwd3.png"/>
 
 It consist of a navigation bar, a main tag containing the different sections and a footer at the end of the page.
@@ -16,7 +14,8 @@ It consist of a navigation bar, a main tag containing the different sections and
 
 # Live Demo
 
-https://rawcdn.githack.com/nrqrmz/Responsive-Design/eb7e02f2dfcdb4b7bebde475bdb464d498c720e4/index.html
+[live_demo](https://rawcdn.githack.com/nrqrmz/Responsive-Design/eb7e02f2dfcdb4b7bebde475bdb464d498c720e4/index.html)
+
 
 # Getting Started
 
