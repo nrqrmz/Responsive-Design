@@ -562,6 +562,12 @@
   display: flex;
   justify-content: center;
   padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-b2-wrapper {
+  display: flex;
+  max-width: 80%;
 }
 
 .fimg1 {
