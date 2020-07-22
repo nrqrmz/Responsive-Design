@@ -131,7 +131,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Coronavirus-model-796x418.jpg");
-  height: 150px;
+  height: 40vh;
   padding: 15px;
 }
 
@@ -140,7 +140,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/waymo-level-4-germany-legislation-automotive-cars-future-self-driving-autonomous-796x446.jpg");
-  height: 150px;
+  height: 40vh;
   padding: 15px;
 }
 
@@ -149,7 +149,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/sheets_formula-796x417.png");
-  height: 150px;
+  height: 40vh;
   padding: 15px;
 }
 
@@ -159,11 +159,12 @@
 
 .tga-category {
   color: var(--white-tnw);
+  font-size: 0.9rem;
 }
 
 .tga-title {
   color: var(--white-tnw);
-  font-size: 1.5em;
+  font-size: 1.25rem;
 }
 
 .tga-p {
@@ -670,7 +671,7 @@
 
   .trigrid-article1 {
     grid-area: first;
-    height: 340px;
+    height: 87vh;
   }
 
   .trigrid-article2 {
