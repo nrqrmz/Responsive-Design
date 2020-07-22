@@ -381,3 +381,98 @@
   background: var(--lighter-orange);
   padding: 1rem 0.5rem 1rem 10px;
 }
+
+/* Nonagrid */
+
+.nonagrid__wrapper {
+  width: 100%;
+
+}
+
+.nonagrid__article {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.category-title-a {
+  color: var(--orange-tnw);
+  font-size: 2rem;
+}
+
+.category-title-a:hover {
+  color: var(--black-tnw);
+}
+
+.main__image1 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/amazonbezos-368x276.jpg);
+  background-size: cover;
+  padding: 10rem 2rem 1rem 1rem;
+}
+.mi-section-a {
+  color: var(--white-tnw);
+}
+
+.mi-title {
+  font-size: 1.4rem;
+  color: var(--white-tnw);
+}
+
+.mi-title:hover {
+  text-decoration: underline;
+}
+
+.mi-aad {
+  color: var(--gray1);
+  font-size: 14px;
+}
+
+.author-a {
+  text-decoration: none;
+  color: var(--gray1);
+}
+
+.ng-orange__section {
+  background: var(--light-orange);
+  display: grid;
+  grid-template-areas: 
+    "cat image";
+  grid-template-columns: 1fr 100px;
+  grid-template-rows: 1fr 1fr;  
+  height: 100px;  
+}
+
+.ng-os-cat {
+  grid-area: cat;
+  padding: 1rem;
+}
+
+.ng-os-category {
+  color: var(--orange-tnw);
+  padding-bottom: 5px;
+}
+
+.ng-os-title {
+  color: var(--orange-tnw);
+}
+
+.ng-og-img {
+  width: 100px;
+  height: 100px;
+  grid-area: image;
+}
+
+.ng__ul {
+  margin: 10px 20px;
+  list-style: var(--orange-tnw);
+}
+
+.ng__ul-li {
+  color: var(--orange-tnw);
+  padding: 0.2rem 0;
+  border-bottom: 1px solid var(--gray1);
+}
+
+.ng__ul-li-a {
+  color: var(--gray1);
+  font-size: 14px;
+}
