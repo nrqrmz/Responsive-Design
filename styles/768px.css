@@ -149,7 +149,7 @@
 
 .index__co-grid {
   display: grid;
-  grid-template-areas: "north east south west";
+  grid-template-areas: "north east south";
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
@@ -159,4 +159,12 @@
 
 .icc1 {
   grid-area: north;
+}
+
+.icc2 {
+  grid-area: east;
+}
+
+.icc3 {
+  grid-area: south;
 }
