@@ -153,6 +153,10 @@
   padding: 15px;
 }
 
+.tglogo {
+  width: 40%;
+}
+
 .tga-category {
   color: var(--white-tnw);
 }
