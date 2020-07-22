@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 /* Attributtes */
 
 .bold700 {
@@ -47,14 +51,12 @@
 .navbar {
   width: 100%;
   position: fixed;
-  z-index: 2;
 }
 
 .navbar__grid {
   width: 100%;
   display: none;
   position: fixed;
-  z-index: 2;
 }
 
 .black__navbar {
@@ -155,6 +157,7 @@
 
 .tglogo {
   width: 40%;
+  display: none;
 }
 
 .tga-category {
@@ -779,6 +782,11 @@
 
   .white__navbar-container__logo {
     display: none;
+  }
+
+  .tglogo {
+    width: 40%;
+    display: inline;
   }
 
   /* Octagrid */
