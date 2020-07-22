@@ -148,7 +148,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat,  url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/sheets_formula-796x417.png") center / cover;
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.007)) no-repeat, url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/sheets_formula-796x417.png") center / cover;
   height: 40vh;
   padding: 15px;
 }
@@ -765,7 +765,7 @@
 
 @media screen and (min-width: 1024px) {
 
-/* Navbar */
+  /* Navbar */
 
   .navbar__grid {
     display: none;
